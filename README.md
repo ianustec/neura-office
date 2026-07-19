@@ -26,6 +26,30 @@ OpenOffice stay in scope where OOXML allows.
 
 ---
 
+## New to Open WebUI?
+
+[Open WebUI](https://github.com/open-webui/open-webui) is a self-hosted chat
+interface for LLMs, the kind of thing you run yourself instead of using
+ChatGPT's website. You point it at OpenAI, Claude, or a local model (Ollama,
+vLLM, …), and your team chats with it like any AI assistant, except it runs on
+your own infrastructure with your own data.
+
+On top of chat, Open WebUI supports **Tools**: small Python plugins that give
+the model new abilities. A Tool can browse the web, query a database, or, in
+this suite's case, **generate a real Office file**. When the model decides a
+task needs a Word document, it calls the tool, and the tool builds the file
+and hands back a download link.
+
+That is what NEURA Office plugs into: three Tools that turn any Open WebUI
+chat into a place where you can ask for a report, a deck or a workbook and get
+back a file you actually open in Word, PowerPoint or Excel.
+
+Everything below assumes you already have (or will set up) an Open WebUI
+instance. If you don't, start at the
+[Open WebUI repository](https://github.com/open-webui/open-webui).
+
+---
+
 ## The problem
 
 Ask an LLM for a report, a pitch or a budget and you usually get one of these:
@@ -86,8 +110,6 @@ color.
 
 Repo and docs: [openwebui-generate-documents](https://github.com/ianustec/openwebui-generate-documents)
 
-![Word cover detail](assets/documents-cover.png)
-
 ### 2. Generate Slides (PowerPoint)
 
 ![Slides preview](assets/slides-hero.png)
@@ -106,8 +128,6 @@ shapes, curated themes and charts that remain charts when you open the file.
 
 Repo and docs: [openwebui-generate-slides](https://github.com/ianustec/openwebui-generate-slides)
 
-![KPI slide detail](assets/slides-kpi.png)
-
 ### 3. Generate Spreadsheets (Excel)
 
 ![Spreadsheet preview](assets/spreadsheets-hero.png)
@@ -125,8 +145,6 @@ formula strings. No LibreOffice needed inside the Open WebUI container.
 - Native charts and conditional formatting
 
 Repo and docs: [openwebui-generate-spreadsheets](https://github.com/ianustec/openwebui-generate-spreadsheets)
-
-![Table detail](assets/spreadsheets-table.png)
 
 ---
 
