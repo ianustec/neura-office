@@ -21,10 +21,10 @@ Public roadmap for **NEURA Office**. Dates are indicative; status beats dates.
 
 ## Later
 
-- [ ] **NEURA for Microsoft 365** (see [`apps/ms365.md`](apps/ms365.md))
-  - Word / Excel / PowerPoint / Outlook add-in
+- [ ] **NEURA for Microsoft 365** (WIP, tracked in this repo: [`apps/ms365.md`](apps/ms365.md))
+  - Private Copilot alternative for Word / Excel / PowerPoint / Outlook
   - Open WebUI as the assistant backend
-  - Same generation engines behind a Copilot-shaped UX
+  - Same generation engines as the chat tools
 - [ ] Optional Outlook mail draft / attachment flow
 - [ ] Hardening for air-gapped / on-prem only deployments
 

@@ -12,8 +12,10 @@ you can open, edit and share. Not HTML exports. Not PDF screenshots. Not Markdow
 dumped into a `.docx` zip.
 
 Today it ships as three [Open WebUI](https://github.com/open-webui/open-webui)
-tools. Next it grows into a Microsoft 365 assistant with the same engines behind
-it, and LibreOffice / OpenOffice support where OOXML allows.
+tools. Next: **NEURA for Microsoft 365**, a WIP add-in that works inside Word,
+Excel, PowerPoint and Outlook as a **private Copilot alternative** backed by
+your Open WebUI ([details](#neura-for-microsoft-365-wip)). LibreOffice /
+OpenOffice stay in scope where OOXML allows.
 
 | | |
 |---|---|
@@ -217,18 +219,57 @@ write standards-based packages. Details and how to report gaps:
 
 ---
 
+## NEURA for Microsoft 365 (WIP)
+
+**Status: work in progress.** Not released yet. Progress and design notes stay
+anchored to **this repository** ([`apps/ms365.md`](apps/ms365.md)).
+
+The next layer of NEURA Office is a **Microsoft 365 add-in**: an assistant that
+lives inside the apps people already use, in the place they expect **Copilot**,
+but pointed at **your** stack.
+
+| | Copilot (Microsoft) | NEURA for Microsoft 365 |
+|---|---|---|
+| Where it appears | Word, Excel, PowerPoint, Outlook | Same apps |
+| Backend | Microsoft cloud | **Your Open WebUI** |
+| Models / RAG / tools | Vendor-controlled | Yours (same as chat today) |
+| Document engines | Microsoft | Same NEURA Office generators (`.docx` / `.pptx` / `.xlsx`) |
+| Data path | Leaves your tenant toward Copilot services | Stays on your Open WebUI deployment |
+
+**What it will let you do**
+
+- Work on **Word**, **Excel**, **PowerPoint** and **Outlook** from a side panel
+- Draft, rewrite and generate native Office files without leaving the app
+- Reuse the same Open WebUI models, knowledge and tools you already trust in chat
+- Keep the workflow **private / self-hosted**: compatible with Open WebUI as the
+  brain, instead of a public Copilot subscription
+
+**What is live today**
+
+The three Open WebUI tools above. They are the generation engines the add-in
+will call. You can already produce Word / PowerPoint / Excel from chat while
+the MS365 shell is being built.
+
+**What is not ready**
+
+- Installable add-in package
+- Store / tenant deployment guides
+- Public beta dates
+
+Follow [`apps/ms365.md`](apps/ms365.md) and open a Discussion with tag `ms365`
+if you want early access.
+
+---
+
 ## Roadmap
 
 | Phase | Status | Focus |
 |-------|--------|--------|
 | **Now** | Live | Three Open WebUI tools (Word, PowerPoint, Excel) |
 | **Next** | In progress | Shared polish, more templates, LibreOffice QA pack |
-| **Later** | Planned | **NEURA for Microsoft 365**: add-in in Word / Excel / PowerPoint / Outlook, Open WebUI as backend |
+| **Later** | WIP | **NEURA for Microsoft 365** add-in (Copilot alternative on Open WebUI), tracked in this repo |
 
 Full plan: [`ROADMAP.md`](ROADMAP.md)
-
-MS365 direction (Copilot-shaped UX, your models, same generators):
-[`apps/ms365.md`](apps/ms365.md)
 
 ---
 
