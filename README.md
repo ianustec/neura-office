@@ -93,7 +93,7 @@ Full plan: [`ROADMAP.md`](ROADMAP.md) · MS365 notes: [`apps/ms365.md`](apps/ms3
 
 ## Why “NEURA”?
 
-Short version: NEURA is the AI platform we build at IANUSTEC (sovereign,
+Short version: NEURA is the AI infrastructure we build at IANUSTEC (sovereign,
 Open WebUI-based). This suite is the Office layer of that stack.
 
 Longer story (when the site is ready): [`WHY-NEURA.md`](WHY-NEURA.md)
