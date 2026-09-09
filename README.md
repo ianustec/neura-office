@@ -86,7 +86,7 @@ suite overview.
 
 | Tool | Output | Latest | Repository |
 |------|--------|--------|------------|
-| [Generate Documents](https://github.com/ianustec/openwebui-generate-documents) | `.docx` | [v1.2.0](https://github.com/ianustec/openwebui-generate-documents/releases/latest) | Word engine |
+| [Generate Documents](https://github.com/ianustec/openwebui-generate-documents) | `.docx` | [v1.2.4](https://github.com/ianustec/openwebui-generate-documents/releases/latest) | Word engine |
 | [Generate Slides](https://github.com/ianustec/openwebui-generate-slides) | `.pptx` | [v1.0.2](https://github.com/ianustec/openwebui-generate-slides/releases/latest) | PowerPoint engine |
 | [Generate Spreadsheets](https://github.com/ianustec/openwebui-generate-spreadsheets) | `.xlsx` | [v1.0.1](https://github.com/ianustec/openwebui-generate-spreadsheets/releases/latest) | Excel engine |
 
